@@ -25,8 +25,13 @@ const Footer = () => {
             />
           </a>
 
-          {/* Download the resume (make sure the file exists in /public) */}
-          <a href="/Harshvardhan_Resume.pdf" download id="resume">
+          {/* Download the resume (make sure the file exists in /public)
+              Use basePath to work on GitHub Pages or subpaths */}
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Harshvardhan_Resume.pdf`}
+            download="Harshvardhan_Resume.pdf"
+            id="resume"
+          >
             <MagicButton
               title="Resume"
               icon={<RxResume />}
