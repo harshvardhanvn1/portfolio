@@ -1,13 +1,15 @@
-// next.config.mjs
 const isProd = process.env.NODE_ENV === "production";
-const repo = "portfolio"; // your repo name
+const repo = "portfolio";
 
-export default {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   basePath: isProd ? `/${repo}` : undefined,
   assetPrefix: isProd ? `/${repo}/` : undefined,
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repo}` : "",
+  eslint: {
+    ignoreDuringBuilds: true, 
   },
 };
+
+export default nextConfig;

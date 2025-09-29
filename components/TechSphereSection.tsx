@@ -15,7 +15,7 @@ const TechSphereSection: React.FC = () => {
   return (
     <section className="py-24">
       <h2 className="heading text-center mb-10">
-        <span className="text-purple">Tech I've used</span>
+        <span className="text-purple">Tech I&apos;ve used</span>
       </h2>
 
       <div className="flex justify-center">
