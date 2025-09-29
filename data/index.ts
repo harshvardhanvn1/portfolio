@@ -1,3 +1,5 @@
+const asset = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+
 export const navItems = [
   { name: "About", link: "#about" },
   {name: "Work Experience", link: "#workExperience"},
@@ -14,7 +16,7 @@ export const gridItems = [
       "Strong applied foundation across AI/ML, Computer Vision, and Data Science through coursework, projects, and industry experience.",
     description: "",
     className: "md:col-start-1 md:row-span-3",   // big = span 3 rows
-    img: "/AI.jpg",
+    img: asset("/AI.jpg"),
     imgClassName: "object-cover opacity-60",
     titleClassName: "justify-end",
     spareImg: "",
@@ -26,7 +28,7 @@ export const gridItems = [
     title: "I'm flexible across time zone communications",
     description: "",
     className: "md:col-start-2 md:row-span-1",   // small = span 1 row
-    img: "/grid.svg",
+    img: asset("/grid.svg"),
     imgClassName: "object-cover opacity-20",
     titleClassName: "items-center  text-center",
     spareImg: "",
@@ -37,7 +39,7 @@ export const gridItems = [
     title: "Currently working on an AWS lakehouse for market data - downloader -> Spark ETL -> S3 (Parquet), queried via Athena, orchestrated with Airflow.",
     description: "The Inside Scoop",
     className: "md:col-start-2 md:row-span-3",   // big
-    img: "/DE.png",
+    img: asset("/DE.png"),
     imgClassName: "object-end opacity-70",
     titleClassName: "justify-end",
     spareImg: "",
@@ -64,7 +66,7 @@ export const projects = [
     id: 1,
     title: "Secure-RAG: Permissioned Retrieval & Data Sanitization",
     des: "Hardened RAG with role-aware retrieval, pre/post-answer sanitizers, and full audit logging to prevent PII/secret leakage; production-minded policies and tests.",
-    img: "./SecureRag.png",
+    img: asset("/SecureRag.png"),
     height: "300px",
     width: "400px",
     link: "https://github.com/harshvardhanvn1/secure-rag",
@@ -73,7 +75,7 @@ export const projects = [
     id: 2,
     title: "Adversarial Time-Series Forecasting",
     des: "TFT/Informer on UCI Electricity & M4; FGSM/PGD attacks and smoothing defense; reproducible PyTorch pipelines with evaluation and plots.",
-    img: "./Timeseries.png",
+    img: asset("/Timeseries.png"),
     height: "300px",
     width: "400px",
     link: "https://github.com/harshvardhanvn1/Adversarial-Timeseries-Forecasting",
@@ -82,7 +84,7 @@ export const projects = [
     id: 3,
     title: "LLM-Join Spider: Discovering SQL Join Keys",
     des: "Query-conditioned join-key discovery on Spider; value-overlap baselines, schema parsing, and automated failure mining + evaluation.",
-    img: "./LLM.png",
+    img: asset("/LLM.png"),
     height: "300px",
     width: "400px",
     link: "https://github.com/harshvardhanvn1/llm-join-spider",
@@ -91,7 +93,7 @@ export const projects = [
     id: 4,
     title: "Computer Vision in Biomedics",
     des: "UNet++ and SOTA comparisons for medical imaging; structured notebooks with loaders, training/eval, and experiment tracking.",
-    img: "./CV.png",
+    img: asset("/CV.png"),
     height: "300px",
     width: "400px",
     link: "https://github.com/harshvardhanvn1/biomed-cv-notebooks",
@@ -129,7 +131,7 @@ export const experienceV2: ExperienceV2[] = [
     location: "Troy, MI",
     employmentType: "Intern",
     remote: false,
-    logo: "/magnalogo.png",
+    logo: asset("/magnalogo.png"),
     summary:
       "Acheived 80% cost savings by creating custom ROS2 camera node; benchmarked CV models and shipped forecasting (~89% accuracy). +8% mIOU via synthetic data.",
     tags: ["ROS2", "Python", "YOLO", "SegFormer", "RTMDet", "Databricks", "Stable Diffusion"],
@@ -151,7 +153,7 @@ export const experienceV2: ExperienceV2[] = [
     location: "Orissa, India",
     employmentType: "Intern",
     remote: true,
-    logo: "/brandbookstudio_logo.jpeg",
+    logo: asset("/brandbookstudio_logo.jpeg"),
     summary:
       "Scaled dataset (+19%) via targeted scraping + captioning; diffusion pipeline with ResNet/YOLO gates improved downstream detection/seg by ~12%.",
     tags: ["Selenium", "BeautifulSoup", "PyTorch Diffusers", "YOLO", "CLIPScore", "LangChain"],
@@ -170,7 +172,7 @@ export const experienceV2: ExperienceV2[] = [
     location: "Ahmedabad, India",
     employmentType: "Intern",
     remote: false,
-    logo: "/roopa_logo.jpeg",
+    logo: asset("/roopa_logo.jpeg"),
     summary:
       "EDA + SQL reduced ~14 hrs/week manual review; dashboards drove decisions and contributed to ~27% revenue growth.",
     tags: ["Python", "Pandas", "SQL", "Power BI", "EDA"],
@@ -189,7 +191,7 @@ export const experienceV2: ExperienceV2[] = [
     location: "Ahmedabad, India",
     employmentType: "Intern",
     remote: false,
-    logo: "/eInfochips_logo.avif",
+    logo: asset("/eInfochips_logo.avif"),
     summary:
       "RNN sentiment with bias mitigation (-0.15 variance); explored transfer learning and RL (Q-Learning, DQN) to improve accuracy and reduce training time.",
     tags: ["TensorFlow", "PyTorch", "RNN", "Transfer Learning", "Reinforcement Learning"],
