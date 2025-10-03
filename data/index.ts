@@ -183,23 +183,23 @@ export const experienceV2: ExperienceV2[] = [
     ]
   },
   {
-    id: 4,
-    role: "Summer AI Intern",
-    company: "eInfochips",
-    start: "May 2023",
-    end: "Jun 2023",
-    location: "Ahmedabad, India",
-    employmentType: "Intern",
-    remote: false,
-    logo: asset("/eInfochips_logo.avif"),
-    summary:
-      "RNN sentiment with bias mitigation (-0.15 variance); explored transfer learning and RL (Q-Learning, DQN) to improve accuracy and reduce training time.",
-    tags: ["TensorFlow", "PyTorch", "RNN", "Transfer Learning", "Reinforcement Learning"],
-    details: [
-      "Developed and fine-tuned a deep learning model (RNNs for sentiment analysis) using TensorFlow and PyTorch, incorporating bias-mitigation techniques (data re-sampling, feature selection) that reduced bias variance by 0.15.",
-      "ollaborated in a team of four using Github for version control to implement transfer learning with pre-trained models and incorporate reinforcement learning (Q-Learning, Deep Q-networks), cutting training time and increasing accuracy.",
-      "Articulated comprehensive technical findings to senior management, reflecting initiative and robust teamwork."
-    ]
+  id: 4,
+  role: "Summer AI Intern",
+  company: "eInfochips",
+  start: "May 2023",
+  end: "Jun 2023",
+  location: "Ahmedabad, India",
+  employmentType: "Intern",
+  remote: false,
+  logo: asset("/eInfochips_logo.avif"),
+  summary:
+    "Built GPU-accelerated inference pipeline with TensorRT and custom CUDA kernels, achieving 65% latency reduction and 2.3x throughput improvement through mixed-precision optimization and memory coalescing.",
+  tags: ["CUDA", "TensorRT", "PyTorch", "TensorFlow", "FP16", "Nsight Profiler", "CMake", "GPU Optimization"],
+  details: [
+    "Built GPU-accelerated deep learning inference pipeline using TensorRT and CUDA custom kernels for sentiment analysis models, reducing inference latency by 65% (from 45ms to 15ms per batch) on NVIDIA T4 GPUs.",
+    "Deployed mixed-precision (FP16) training and quantization-aware training workflows using PyTorch + CUDA extensions, achieving 2.3x throughput improvement while maintaining model accuracy within 1% of baseline.",
+    "Collaborated in team of four using Git and CMake build systems to deploy optimized models; profiled performance bottlenecks with NVIDIA Nsight Profiler and applied memory coalescing patterns to improve kernel efficiency."
+  ]
   }
 ];
 
