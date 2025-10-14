@@ -123,7 +123,7 @@ export type ExperienceV2 = {
 export const experienceV2: ExperienceV2[] = [
   {
     id: 1,
-    role: "Data Analytics, Simulation & IoT, AMI Intern",
+    role: "Advanced Manufacturing Innovation Intern",
     company: "MAGNA International",
     companyUrl: "https://www.magna.com/",
     start: "May 2025",
@@ -141,7 +141,9 @@ export const experienceV2: ExperienceV2[] = [
       "Benchmarked cutting-edge vision models (SegFormer, UNet, YOLO, RTMDet, DINO) and commercial platforms (Sony BrainBuilder) for segmentation/detection tasks, guiding model adoption strategies.",
       "Aided plant engineers to install and configure 24 industrial cameras to the same network as virtual machines; selected among interns to join a 3-member support team to enable deployment of the image collection application by understanding and working through a professionally developed repository of vision platform by senior engineers.",
       "Performing complex data analysis, including predictive forecasting on inventory management with 89% accuracy even with a limited dataset, for Smart Manufacturing, leveraging Databricks.",
-      "Improved defect detection mIOU by 8% through Stable Diffusion based synthetic data generation of realistic defective images, tuning hyperparameters, and annotating outputs in CVAT - mitigating bias and balancing the dataset."
+      "Improved defect detection mIOU by 8% through Stable Diffusion based synthetic data generation of realistic defective images, tuning hyperparameters, and annotating outputs in CVAT - mitigating bias and balancing the dataset.",
+      "Architected computer vision training infrastructure using MMDetection for DINO and RTMDet on kubernetes, accelerated training from 2.5 days to 2 hours through mixed-precision optimization on L40 GPUs.",
+      "Engineered GPU inference workflow by fine-tuning pretrained DINO detector, exported to ONNX format, deployed on NVIDIA Triton Inference Server for real-time defect detection at manufacturing stations."
     ]
   },
   {
